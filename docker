@@ -119,7 +119,7 @@
 	             docker build .  ====  
 	  
 	  
-	  FROM tomcat:7
+      FROM tomcat:7
       MAINTAINER dhanraj nagaraj
       LABEL "support-Tean"="DevOps"
       ADD dhanraj /usr/local/tomcat

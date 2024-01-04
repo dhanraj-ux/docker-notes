@@ -1,37 +1,32 @@
 						DOCKER
-			Virtualization:
-		     
-			 Enable you to run the multiple operating system on the hardware of a single physical server.
+Virtualization:
+Enable you to run the multiple operating system on the hardware of a single physical server.
 			 
-	    containerization:
-		
-		     enable you to run deploy the multiple application using same operating system on single virtual machine.
-		DOCKER 
-		
-		  Docker is open source platform tool designed to manage the container.
-		  which allow to use to build to application in a containerwith required libraries.
-		  binaries, dependencies to run the application, ship the container run anywhere.
+containerization:
+enable you to run deploy the multiple application using same operating system on single virtual machine.
+DOCKER 
+Docker is open source platform tool designed to manage the container.
+which allow to use to build to application in a containerwith required libraries.
+binaries, dependencies to run the application, ship the container run anywhere.
 		  
-		  WHY WE USE DOCKER
-		  
-		    portbility
-			light waight 
-			fast delivery and scalability.
-			resource optimization
-			docker ability to run multiple isolated OS in single host.
-			docker is used for continuous deployment and testing.
+WHY WE USE DOCKER
+portbility
+light waight 
+fast delivery and scalability.
+resource optimization
+docker ability to run multiple isolated OS in single host.
+docker is used for continuous deployment and testing.
 			
 		
-		Exploring the availabilty docker components:
-		
-		  docker client
-		  docker host (docker engine)
-		  docker rigistry
-		  we have other components as well as 
-		  docker image
-		  docker containers
-		  docker network
-		  docker storage
+Exploring the availabilty docker components:
+docker client
+docker host (docker engine)
+docker rigistry
+we have other components as well as 
+docker image
+docker containers
+docker network
+docker storage
 		     
 			 
 			 
@@ -59,7 +54,6 @@ Installation of docker in linux machine
 			
 			
 docker file:
-			  
 Docker file is used to build our own docker images by giving some instrictions to cstomise an existing 
 docker image baswd on our requirement in an automated way without running a docker container.
 			   
@@ -71,9 +65,7 @@ docker file name should be Dockerfile.
  and we can use our own need.
 but still we use need to customize the existing docker images based on our requirement.
 so dockerfile helps to us build our own docker imagesautomatically as per the instractiom given.
-				   
-				   
-				   
+				   				   
 EXPLORING THE INSTRACTION IN DOCKERFILE:
 
        FROM         MAINTAINER
@@ -83,9 +75,6 @@ EXPLORING THE INSTRACTION IN DOCKERFILE:
        ARG          EXPOSE 
        RUN          USER
        VOLUME       WORKDIR
-
-
-
 
     Dockerfile syntex
 
@@ -99,9 +88,7 @@ EXPLORING THE INSTRACTION IN DOCKERFILE:
 
 
    dockerfile FROM instrictions :		   
-   
-   
-   
+
    what is the mandatory instrictions in docker file?
    what is the major difference in add and copy instrictions?
    what is the major differencein cmd and entrypoint?
@@ -111,12 +98,12 @@ EXPLORING THE INSTRACTION IN DOCKERFILE:
    docker file demo 
       
 	  
-	  vim Dockerfile
+vim Dockerfile
 	         entry the below sentence and save and exit 
-      FROM tomcat:7
+FROM tomcat:7
 	  
 	 run this  command 
-	             docker build .  ====  
+ docker build .  ====  
 	  
 	  
       FROM tomcat:7

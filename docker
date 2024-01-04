@@ -1,0 +1,138 @@
+						DOCKER
+			Virtualization:
+		     
+			 Enable you to run the multiple operating system on the hardware of a single physical server.
+			 
+	    containerization:
+		
+		     enable you to run deploy the multiple application using same operating system on single virtual machine.
+		DOCKER 
+		
+		  Docker is open source platform tool designed to manage the container.
+		  which allow to use to build to application in a containerwith required libraries.
+		  binaries, dependencies to run the application, ship the container run anywhere.
+		  
+		  WHY WE USE DOCKER
+		  
+		    portbility
+			light waight 
+			fast delivery and scalability.
+			resource optimization
+			docker ability to run multiple isolated OS in single host.
+			docker is used for continuous deployment and testing.
+			
+		
+		Exploring the availabilty docker components:
+		
+		  docker client
+		  docker host (docker engine)
+		  docker rigistry
+		  we have other components as well as 
+		  docker image
+		  docker containers
+		  docker network
+		  docker storage
+		     
+			 
+			 
+			 1. docker client :It is used to manage the docker components such as container image network
+			 storage volume by giving the specific instrictions toperform some operations  like build, run,
+			 create, pull, delete, stop and restart
+			 
+			   docker client interact with the docker host where docker daeman is install.
+			   
+			   
+			 2. Docker host:
+			     Docker host is the server where the docker daemanis running and it is managed the docker containerand other resource.
+				 It is listen and accepts the requests form docker cliet.
+				 
+			 3. Docker rigistry (Docker Hub)
+			    docker rigistryis nothing but to managethe docker images.
+				docker hub is available in internet maintaining by docker compony 	in cloud.
+				we can pull the docker image from docker hub  
+				we have two service in docker hub 
+				    1. public 
+					  2. private 
+					
+			Installation of docker in linux machine 
+			
+			
+			
+			docker file:
+			  
+			   Docker file is used to build our own docker images by giving some instrictions to cstomise an existing 
+			   docker image baswd on our requirement in an automated way without running a docker container.
+			   
+			   docker file name should be Dockerfile.
+			   
+			   
+			       why you requiredis dockerfile
+				     we have lot of pre-existing docker images available in docker hub rigistry. it can pull directly fro docker hub
+					 and we can use our own need.
+				   but still we use need to customize the existing docker images based on our requirement.
+				   so dockerfile helps to us build our own docker imagesautomatically as per the instractiom given.
+				   
+				   
+				   
+	    EXPLORING THE INSTRACTION IN DOCKERFILE:
+
+       FROM         MAINTAINER
+       LABEL        ADD
+       COPY         CMD
+       ENTRYPOINT   ENV	
+       ARG          EXPOSE 
+       RUN          USER
+       VOLUME       WORKDIR
+
+
+
+
+    Dockerfile syntex
+
+      dockerfile syntex consist of two kind of main line blocks
+
+      ==  #comments
+      ==  INSTRACTION arguments
+
+     ex    #print "Hello docker"
+           RUN echo "Hello docker"
+
+
+   dockerfile FROM instrictions :		   
+   
+   
+   
+   what is the mandatory instrictions in docker file?
+   what is the major difference in add and copy instrictions?
+   what is the major differencein cmd and entrypoint?
+   what is the major difference between ENV and arguments?
+   
+   
+   docker file demo 
+      
+	  
+	  vim Dockerfile
+	         entry the below sentence and save and exit 
+      FROM tomcat:7
+	  
+	 run this  command 
+	             docker build .  ====  
+	  
+	  
+	  FROM tomcat:7
+      MAINTAINER dhanraj nagaraj
+      LABEL "support-Tean"="DevOps"
+      ADD dhanraj /usr/local/tomcat
+      COPY dhanraj /tmp
+      CMD sleep 100
+      ENTRYPOINT sleep 5000
+      ENV app_yersion 3.10
+      ARG APP_NAME DHANU-APP
+      EXPOSE 8080
+      RUN apt update
+      USER dhanrajnagaraj
+      VOLUME /root:/usr/local/tomcat
+      WORKDIR /usr/local/tomcat
+      COPY dhanraj .
+
+	       

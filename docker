@@ -35,46 +35,46 @@
 		     
 			 
 			 
-			 1. docker client :It is used to manage the docker components such as container image network
-			 storage volume by giving the specific instrictions toperform some operations  like build, run,
-			 create, pull, delete, stop and restart
+1. docker client :It is used to manage the docker components such as container image network
+storage volume by giving the specific instrictions toperform some operations  like build, run,
+create, pull, delete, stop and restart
 			 
-			   docker client interact with the docker host where docker daeman is install.
+docker client interact with the docker host where docker daeman is install.
 			   
 			   
-			 2. Docker host:
-			     Docker host is the server where the docker daemanis running and it is managed the docker containerand other resource.
-				 It is listen and accepts the requests form docker cliet.
+2. Docker host:
+Docker host is the server where the docker daemanis running and it is managed the docker containerand other resource.
+It is listen and accepts the requests form docker cliet.
 				 
-			 3. Docker rigistry (Docker Hub)
-			    docker rigistryis nothing but to managethe docker images.
-				docker hub is available in internet maintaining by docker compony 	in cloud.
-				we can pull the docker image from docker hub  
-				we have two service in docker hub 
-				    1. public 
-					  2. private 
+3. Docker rigistry (Docker Hub)
+docker rigistryis nothing but to managethe docker images.
+docker hub is available in internet maintaining by docker compony in cloud.
+we can pull the docker image from docker hub  
+ we have two service in docker hub 
+			1. public 
+			2. private 
 					
-			Installation of docker in linux machine 
+Installation of docker in linux machine 
 			
 			
 			
-			docker file:
+docker file:
 			  
-			   Docker file is used to build our own docker images by giving some instrictions to cstomise an existing 
-			   docker image baswd on our requirement in an automated way without running a docker container.
+Docker file is used to build our own docker images by giving some instrictions to cstomise an existing 
+docker image baswd on our requirement in an automated way without running a docker container.
 			   
-			   docker file name should be Dockerfile.
+docker file name should be Dockerfile.
 			   
 			   
-			       why you requiredis dockerfile
-				     we have lot of pre-existing docker images available in docker hub rigistry. it can pull directly fro docker hub
-					 and we can use our own need.
-				   but still we use need to customize the existing docker images based on our requirement.
-				   so dockerfile helps to us build our own docker imagesautomatically as per the instractiom given.
+ why you requiredis dockerfile
+ we have lot of pre-existing docker images available in docker hub rigistry. it can pull directly fro docker hub
+ and we can use our own need.
+but still we use need to customize the existing docker images based on our requirement.
+so dockerfile helps to us build our own docker imagesautomatically as per the instractiom given.
 				   
 				   
 				   
-	    EXPLORING THE INSTRACTION IN DOCKERFILE:
+EXPLORING THE INSTRACTION IN DOCKERFILE:
 
        FROM         MAINTAINER
        LABEL        ADD

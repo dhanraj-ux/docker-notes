@@ -123,3 +123,44 @@ FROM tomcat:7
       COPY dhanraj .
 
 	       
+what is docker image ?
+  docker image is file compresed of multiple layer, that is used execute code in a docker container.
+  
+  docker image commands 
+  
+   docker images 
+   docker image ls 
+     if u want pull the docker image
+   docker pull
+     if u want check the history of the docker image
+    docker history (image-id)
+	if u want check the information of the docker image
+	 docker inspect {image -id}
+	 
+	 
+ what is docker storage ?
+   The storage driven control how images and container are stored and managed on your docker host.
+   docker support severals storage drivers using a pluggeble architecture.
+      
+	  Different types of storage drivers
+	  
+	   1. overlay
+	   2. overlay2
+	   3. aufs
+	     
+		 
+wherw it is stored docker images
+
+  var/lib/docker  
+  
+  
+what is docker  container?
+
+  Docker containeris a executable form of docker image
+  you can have multiple docker container from a single docker image.
+  
+  docker run 
+    docker ps
+	docker ps -a
+	docker ps -q
+	docker ps -qa 
